@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Adventure Awaits</h1>
+    </header>
+    
+    <main>
+        <section id="story-section">
+            <p id="story-text"></p>
+            <img id="story-image" src="" alt="Story Image">
+        </section>
+        <section id="choices"></section>
+        <button id="reset-button" onclick="startGame()">Restart Game</button>
+    </main>
+
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+    
+    <section id="addendum">
+        <h2>Addendum</h2>
+        <p><strong>Process and Planning:</strong> I started by outlining the story, which involves a mysterious forest and various decision points leading to multiple endings. Planning the flowchart helped visualize each decision path and track the different outcomes.</p>
+        <p><strong>Creative Choices:</strong> For visuals, I chose a cohesive fantasy theme with forest, river, dragon, and treasure images. The colors and fonts were selected to create an immersive experience that aligns with the story.</p>
+        <p><strong>Challenges and Solutions:</strong> Maintaining smooth transitions and organizing the story choices required careful debugging. The reset button allows the player to restart without refreshing the page, enhancing usability.</p>
+        <p><strong>Insights:</strong> Working on this project provided valuable experience in DOM manipulation and event handling, as well as a deeper understanding of JavaScript's role in interactive web applications.</p>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>

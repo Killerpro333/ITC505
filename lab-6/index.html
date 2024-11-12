@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6: Number Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Number Checker</h1>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <h2>Check if a Number is Even or Odd</h2>
+        <input type="text" id="numberInput" placeholder="Enter a number">
+        <button onclick="checkEvenOdd()">Check Number</button>
+    </main>
+
+    <!-- Advertisement Section on the Right -->
+    <aside class="ad-section">
+        <a href="https://www.amazon.com/PlayStation-5-Pro-Console/dp/B0DGY63Z2H/ref=sr_1_1?crid=YWLXY26WYECI" target="_blank">
+            <img src="images/ps5-pro.jpg" alt="PlayStation 5 Pro" width="300" height="600">
+        </a>
+    </aside>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Lab 6 Project for ITC505</p>
+        <p>Last updated: <span id="lastModified"></span></p>
+        <p><strong>Addendum:</strong> This project includes a JavaScript program to check if a number is even or odd. The solution utilizes a simple modulus operation. A challenge encountered was ensuring users entered valid numeric input, which was handled by validating the input using JavaScript's `isNaN` function.</p>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+</body>
+</html>

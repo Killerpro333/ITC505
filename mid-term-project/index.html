@@ -13,17 +13,13 @@
     
     <main>
         <section id="story-section">
-            <p id="story-text"></p>
+            <p id="story-text">You wake up in a strange room. What do you do?</p>
             <img id="story-image" src="" alt="Story Image">
         </section>
         <section id="choices"></section>
         <button id="reset-button" onclick="startGame()">Restart Game</button>
     </main>
 
-    <footer>
-        <p>Last updated: <span id="lastModified"></span></p>
-    </footer>
-    
     <section id="addendum">
         <h2>Addendum</h2>
         <p><strong>Process and Planning:</strong> I started by outlining the story, which involves a mysterious forest and various decision points leading to multiple endings. Planning the flowchart helped visualize each decision path and track the different outcomes.</p>
@@ -32,10 +28,14 @@
         <p><strong>Insights:</strong> Working on this project provided valuable experience in DOM manipulation and event handling, as well as a deeper understanding of JavaScript's role in interactive web applications.</p>
     </section>
 
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+    
     <script src="script.js"></script>
     <script>
-        var x = document.lastModified;
-        document.getElementById('lastModified').textContent = x;
+        // Set the "Last updated" date in the footer
+        document.getElementById('lastModified').textContent = document.lastModified;
     </script>
 </body>
 </html>

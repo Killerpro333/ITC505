@@ -1,0 +1,69 @@
+/* General Page Styles */
+body {
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #1a1a1a; /* Dark horror-themed background */
+    color: #e0e0e0; /* Light text for readability */
+  }
+  
+  /* Header Styling */
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ff4500; /* Bright orange for horror feel */
+    text-shadow: 2px 2px 4px #000; /* Subtle shadow for depth */
+  }
+  
+  /* Section Headers */
+  h2 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    color: #ffd700; /* Golden color for highlights */
+    text-shadow: 1px 1px 3px #333; /* Shadow effect */
+  }
+  
+  /* Paragraphs and Lists */
+  p, ol {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #eeeeee;
+  }
+  
+  strong {
+    color: #ff6347; /* Bold reddish-orange for emphasis */
+    font-weight: bold;
+  }
+  
+  /* Ordered List Styling */
+  ol {
+    list-style: decimal inside;
+  }
+  
+  /* Links */
+  a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #222; /* Dark background for horror theme */
+    color: #ffd700; /* Golden text for contrast */
+    border: 2px solid #ffd700;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  }
+  
+  /* Hover Effects for Links */
+  a:hover {
+    background-color: #ff4500; /* Highlighted orange for hover */
+    color: #ffffff; /* White text for better visibility */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  /* Additional Styling for Layout */
+  h1, h2, p, ol {
+    max-width: 800px;
+    margin: 0 auto; /* Center the content */
+  }
+  

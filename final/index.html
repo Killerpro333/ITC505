@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Lights Out</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lights Out - Horror Edition</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1 class="game-title">LIGHTS OUT - Horror Edition!</h1>
+  <h1 class="game-title">LIGHTS OUT - Turn off all the lights... if you dare!</h1>
 
   <div class="container">
     <div class="board" id="board"></div>
@@ -17,12 +18,23 @@
     </div>
   </div>
 
-  <!-- Game Logic -->
-  <script src="script.js"></script>
+  <!-- Footer Section -->
   <footer>
     <div class="addendum-link" style="text-align: center; margin-top: 20px;">
       <a href="addendum.html" target="_blank">Game Insights: Development Walkthrough</a>
     </div>
+    <div class="last-modified">
+        <p>Last updated: <span id="lastModified"></span></p>
+      </div>
   </footer>
+
+  <!-- Last Modified Script -->
+  <script>
+    // Display the last modified date of the file
+    document.getElementById('lastModified').textContent = document.lastModified;
+  </script>
+
+  <!-- Game Logic -->
+  <script src="script.js"></script>
 </body>
 </html>

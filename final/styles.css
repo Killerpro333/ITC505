@@ -1,0 +1,111 @@
+/* General styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://i.gifer.com/U0qq.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #333;
+    color: #e0f7fa;
+  }
+  
+  /* Container styling */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Title styling */
+  .game-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffd700;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Game board styling */
+  .board {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 10px;
+  }
+  
+  .square {
+    width: 60px;
+    height: 60px;
+    background-image: url('https://i.gifer.com/H90l.gif'); /* Unique image for "on" state */
+    background-size: cover;
+    background-color: #000;
+    border: 2px solid #444;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .square.is-off {
+    background-image: url('https://media.istockphoto.com/id/502789173/photo/light-bulb-concept.jpg?s=2048x2048&w=is&k=20&c=rU_3NH14M-TpbU5bQlPS8-x93KlLbKFxlOi4PnxgEr4='); /* Unique image for "off" state */
+    background-color: #444;
+  }
+  
+  .square:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  
+  /* Buttons and timer styling */
+  .buttons {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 18px;
+    margin: 8px 0;
+  }
+  
+  #timer {
+    font-weight: bold;
+    color: #ffeb3b;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff5722;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+  }
+  
+  /* Footer styling */
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #222;
+    color: #e0f7fa;
+  }
+  
+  a {
+    color: #00e676;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
